@@ -1,0 +1,126 @@
+.navigation {
+  &__button {
+    background: #fff;
+    height: 4rem;
+    width: 4rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    z-index: 100;
+    border-radius: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.3);
+    text-align: center;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    height: 100%;
+    position: relative;
+    &,
+    &:before,
+    &:after {
+      width: 2rem;
+      display: inline-block;
+      height: 3px;
+      background: #ff6e7f;
+    }
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+
+      transition: all 0.3s;
+    }
+    &:before {
+      top: -0.5rem;
+    }
+    &:after {
+      top: 0.5rem;
+    }
+  }
+
+  &__background {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+    z-index: 80;
+
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+    &--open {
+      transform: scale(80);
+    }
+  }
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    opacity: 0;
+    width: 0;
+
+    transition: all 0.8s cubic-bezier(0.68, -0.65, 0.165, 1.55);
+    &--open {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  &__list {
+    list-style: none;
+    color: #111;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      display: inline-block;
+      font-size: 2rem;
+      color: #fff;
+      font-weight: 300;
+      padding: 0.7rem 2rem;
+      text-transform: uppercase;
+      background-size: 230%;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        #fff 50%
+      );
+      transition: all 0.3s;
+    }
+    &:hover,
+    &:active {
+      color: #ff6e7f;
+      background-position: 100%;
+      transform: translateX(0.7rem);
+    }
+  }
+}
+
+.rotate {
+  .navigation__icon {
+    background: transparent;
+    &:before {
+      top: 0;
+      transform: rotate(135deg);
+    }
+    &:after {
+      top: 0;
+      transform: rotate(-135deg);
+    }
+  }
+}

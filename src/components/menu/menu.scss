@@ -1,0 +1,29 @@
+.menu {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url("/img/menu.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  padding: 2.8rem 1rem;
+  color: #fff;
+
+  &__heading {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0.8rem 0.5rem;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__text {
+    font-size: 1.2rem;
+  }
+  &__cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    grid-gap: 1rem 2rem;
+    @media screen and (min-width: 769px) {
+    }
+  }
+}

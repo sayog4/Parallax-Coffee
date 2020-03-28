@@ -1,0 +1,17 @@
+.discount {
+  background: url("/img/discount.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  text-align: center;
+  height: 18.75rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+}
