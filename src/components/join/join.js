@@ -4,7 +4,7 @@ import Input from "../input/input";
 import Button from "../button/button";
 const Join = props => {
   return (
-    <section className="join">
+    <section className="join" id="register">
       <h2 className="heading-2">join members form</h2>
       <form className="join__form">
         <Input label="first name" type="text" />

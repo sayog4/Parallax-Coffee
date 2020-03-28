@@ -4,7 +4,7 @@ import Button from "../button/button";
 
 const About = props => {
   return (
-    <section className="about">
+    <section className="about" id="order">
       <div className="about__content">
         <h3 className="heading-3">make your own</h3>
         <h2 className="heading-2">coffee recipe</h2>

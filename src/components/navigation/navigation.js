@@ -32,32 +32,32 @@ const Navigation = () => {
       >
         <ul className="navigation__list">
           <li className="navigation__item">
-            <a href="/" className="navigation__link">
+            <a onClick={toggle} href="/" className="navigation__link">
               Home
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#order" className="navigation__link">
+            <a onClick={toggle} href="#order" className="navigation__link">
               Order
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#menu" className="navigation__link">
+            <a onClick={toggle} href="#menu" className="navigation__link">
               Menu
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#register" className="navigation__link">
+            <a onClick={toggle} href="#register" className="navigation__link">
               Register
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#discount" className="navigation__link">
+            <a onClick={toggle} href="#discount" className="navigation__link">
               Discount
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#store" className="navigation__link">
+            <a onClick={toggle} href="#store" className="navigation__link">
               Store
             </a>
           </li>

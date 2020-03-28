@@ -6,7 +6,7 @@ import Button from "../button/button";
 
 const Main = props => {
   return (
-    <header className="main">
+    <header className="main" id="home">
       <div className="main__logo">
         <img src="./img/logo.png" alt="logo" className="main__logo-img" />
       </div>
